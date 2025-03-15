@@ -35,17 +35,20 @@ public class App {
                 } catch (SQLException e) {
                     System.err.println("Error saving bill: " + e.getMessage());
                 }
-            } else if (choice == 2) {
+            } 
+            else if (choice == 2) {
                 try {
                     double predictedBill = predictor.predictBillForNextMonth();
                     System.out.println("Predicted Bill for Next Month: ₹" + predictedBill);
                 } catch (SQLException e) {
                     System.err.println("Error predicting bill: " + e.getMessage());
                 }
-            } else if (choice == 3) {
+            } 
+            else if (choice == 3) {
                 System.out.println("Exiting...");
                 break;
-            } else {
+            } 
+            else {
                 System.out.println("Invalid choice. Try again.");
             }
         }
